@@ -8,7 +8,6 @@ Basic Cryptographic Method
 
 ###### The transformation can be represented by aligning two alphabets; the cipher alphabet is the plain alphabet rotated left or right by some number of positions. For instance, here is a Caesar cipher using a left rotation of three places, equivalent to a right shift of 23 (the shift parameter is used as the key):
 
-<br></br>
 
     Plain:    ABCDEFGHIJKLMNOPQRSTUVWXYZ
     Cipher:   XYZABCDEFGHIJKLMNOPQRSTUVW
