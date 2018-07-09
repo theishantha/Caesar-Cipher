@@ -27,8 +27,9 @@ int main(){
             for (int i=0; i< msg.size(); i++ ) {
                 if (msg[i]==32) {
                     continue; // 32 is ASCII of space character, we will ignore it
-                } else{
-                    if(msg[i]+key) > 122 {
+                    } else{
+
+                        if(msg[i]+key) > 122 {
                         //after lowercase z move back to a, z's ASCII is 122
                         int temp = (msg[i] + key) - 122;
                         encryptedText[i] = 96 + temp;
@@ -42,6 +43,9 @@ int main(){
                     }
                 } //if
             } //for
+
+
+
 
          }
 
