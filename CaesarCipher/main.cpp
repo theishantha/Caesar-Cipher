@@ -34,7 +34,10 @@ int main(){
                         encryptedText[i] = 96 + temp;
                     } else if(msg[i] + key > 90 && msg[i] <= 96 ){
                         int temp = (msg[i] +key) -90;
-                        encryptedText[i]
+                        encryptedText[i] = 64 + temp;
+                    } else {
+                        encryptedText[i] += key;
+
                     }
                 }
             }
