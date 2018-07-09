@@ -51,10 +51,11 @@ int main(){
              //decryption
             string encpMsg;
             cout << "Message can only contain alphabettic" << endl;
+            cout << "Enter encrypted text: ";
             getline(cin, encpMsg);
 
             int dcyptKey;
-            cout << "Enter key (0 - 25):";
+            cout << "Enter key (0 - 25): ";
             cin >> dcyptKey;
             cin.ignore();
 
