@@ -44,8 +44,15 @@ int main(){
                 } //if
             } //for
 
+            cout << "Encrypted Message:" << encryptedText;
 
 
+         }else if (choice == 2){
+             //decryption
+             string encpMsg;
+
+
+         }else{
 
          }
 
