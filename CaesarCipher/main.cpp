@@ -67,6 +67,8 @@ int main(){
                     if ((encapMsg[i] - dcyptKey) < 97 && (encapMsg[i] - dcyptKey) > 90){
                         int temp = (encapMsg[i] - dcyptKey) + 26;
                         decryptedText[i] = temp;
+                    } else if(encapMsg[i] - dcyptKey) < 65){
+                        int temp
                     }
                 }
             }
