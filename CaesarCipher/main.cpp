@@ -15,6 +15,25 @@ int main(){
             string msg;
             cout << "Message can only be alphabetic" << endl;
             cout << "Enter message: ";
+            getline(cin, msg);
+
+            int key;
+            cout << "Enter Key (0 - 25):";
+            cin >> key;
+            cin.ignore();
+
+            string encryptedText = msg;
+
+            for (int i=0; i< msg.size(); i++ ){
+                if (msg[i]==32){
+                    continue; // 32 is ASCII of space character, we will ignore it
+                } else{
+                    if(msg[i]+key) > 122 {
+                        //after lowercase z move back to a, z's ASCII is 122
+                        int temp = ()
+                    }
+                }
+            }
 
          }
 
