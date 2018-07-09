@@ -68,8 +68,11 @@ int main(){
                     if ((encpMsg[i] - dcyptKey) < 97 && (encpMsg[i] - dcyptKey) > 90){
                         int temp = (encpMsg[i] - dcyptKey) + 26;
                         decryptedText[i] = temp;
+
                     } else if((encpMsg[i] - dcyptKey) < 65){
                         int temp = (encpMsg[i] - dcyptKey) + 26 ;
+                        decryptedText[i] = temp;
+                    } else {
                         decryptedText[i] = encpMsg[i] - dcyptKey;
                     }
                 }
