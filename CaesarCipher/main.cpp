@@ -36,6 +36,7 @@ int main(){
                         int temp = (msg[i] +key) -90;
                         encryptedText[i] = 64 + temp;
                     } else {
+                        //in case of characters being in Between A-Z  & a-z
                         encryptedText[i] += key;
 
                     }
