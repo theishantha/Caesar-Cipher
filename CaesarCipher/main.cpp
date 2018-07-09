@@ -49,7 +49,18 @@ int main(){
 
          }else if (choice == 2){
              //decryption
-             string encpMsg;
+            string encpMsg;
+            cout << "Message can only contain alphabettic" << encdl;
+            getline(cin, encpMsg);
+
+            int dcyptKey;
+            cout << "Enter key (0 - 25):";
+            cin >> dcyptKey;
+            cin.ignore();
+
+            string decryptedText = encapMsg;
+
+            for(int i = 0; i < encapMsg.size)
 
 
          }else{
