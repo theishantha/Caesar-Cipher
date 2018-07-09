@@ -40,8 +40,8 @@ int main(){
                         encryptedText[i] += key;
 
                     }
-                }
-            }
+                } //if
+            } //for
 
          }
 
