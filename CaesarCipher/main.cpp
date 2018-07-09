@@ -50,7 +50,7 @@ int main(){
          }else if (choice == 2){
              //decryption
             string encpMsg;
-            cout << "Message can only contain alphabettic" << encdl;
+            cout << "Message can only contain alphabettic" << endl;
             getline(cin, encpMsg);
 
             int dcyptKey;
@@ -60,11 +60,21 @@ int main(){
 
             string decryptedText = encapMsg;
 
-            for(int i = 0; i < encapMsg.size)
+            for(int i = 0; i < encapMsg.size(); i++){
+                if(encapMsg==32){
+                    continue; //ignoring space
+                } else {
+                    if ((encapMsg[i] - dcyptKey) < 97 && (encapMsg[i] - dcyptKey) > 90){
+                        int
+                    }
+                }
+            }
 
 
          }else{
-
+            cout << "Invalid choice";
          }
+
+    return 0;
 
 }
