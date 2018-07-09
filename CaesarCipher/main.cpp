@@ -29,7 +29,7 @@ int main(){
                     continue; // 32 is ASCII of space character, we will ignore it
                     } else{
 
-                        if(msg[i]+key) > 122 {
+                        if((msg[i]+key) > 122) {
                         //after lowercase z move back to a, z's ASCII is 122
                         int temp = (msg[i] + key) - 122;
                         encryptedText[i] = 96 + temp;
@@ -58,10 +58,10 @@ int main(){
             cin >> dcyptKey;
             cin.ignore();
 
-            string decryptedText = encapMsg;
+            string decryptedText = encpMsg;
 
-            for(int i = 0; i < encapMsg.size(); i++){
-                if(encapMsg==32){
+            for(int i = 0; i < encpMsg.size(); i++){
+                if(encpMsg[i]==32) {
                     continue; //ignoring space
                 } else {
                     if ((encapMsg[i] - dcyptKey) < 97 && (encapMsg[i] - dcyptKey) > 90){
@@ -75,7 +75,7 @@ int main(){
             }
 
 
-            cout << ""
+            cout << "Decrypted Message: " << decryptedText << endl;
 
 
          }else{
