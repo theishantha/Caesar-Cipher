@@ -43,7 +43,7 @@ int main(){
                     }
                 } //if
             } //for
-s
+
             cout << "Encrypted Message:" << encryptedText;
 
 
