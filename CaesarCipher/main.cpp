@@ -64,11 +64,11 @@ int main(){
                 if(encpMsg[i]==32) {
                     continue; //ignoring space
                 } else {
-                    if ((encapMsg[i] - dcyptKey) < 97 && (encapMsg[i] - dcyptKey) > 90){
-                        int temp = (encapMsg[i] - dcyptKey) + 26;
+                    if ((encpMsg[i] - dcyptKey) < 97 && (encpMsg[i] - dcyptKey) > 90){
+                        int temp = (encpMsg[i] - dcyptKey) + 26;
                         decryptedText[i] = temp;
-                    } else if(encapMsg[i] - dcyptKey) < 65){
-                        int temp = (encapMsg[i] - dcrptKey) + 26 ;
+                    } else if((encpMsg[i] - dcyptKey) < 65){
+                        int temp = (encpMsg[i] - dcyptKey) + 26 ;
                         decryptedText[i] = encpMsg[i] - dcyptKey;
                     }
                 }
